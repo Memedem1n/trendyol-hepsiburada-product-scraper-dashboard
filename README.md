@@ -2,16 +2,14 @@
 
 Marketplace scraping + analytics dashboard for Trendyol and Hepsiburada.
 
-## Project Snapshot
+## Public Sample Notice
 
 | Item | Value |
 | --- | --- |
-| Public sample date | `2026-02-26` |
+| Data policy | Synthetic sample data only |
 | Default sample dataset | `examples/sample_stage2_full_detail_output.json` |
-| Sample listing total | `4` |
-| Sample on-sale products | `3` |
-| Sample failed details | `1` |
-| Sample flattened detail columns | `13` |
+| Real scrape outputs | Not committed to repository |
+| Privacy | Personal paths and private logs removed |
 
 ## Table of Contents
 

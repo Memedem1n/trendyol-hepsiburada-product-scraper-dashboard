@@ -1,0 +1,63 @@
+{
+  "query": "sample brand",
+  "generated_at_utc": "2026-02-26T00:00:00+00:00",
+  "settings": {
+    "verify_ssl": false,
+    "workers": 4,
+    "max_pages_trendyol": 2,
+    "max_pages_hepsiburada": 2,
+    "trendyol_brand_url": "https://www.trendyol.com/sample-brand-x-b000",
+    "hepsiburada_brand_url": "https://www.hepsiburada.com/magaza/sample-brand"
+  },
+  "listing_totals": {
+    "trendyol": 2,
+    "hepsiburada": 2,
+    "all": 4
+  },
+  "detail_totals": {
+    "fetched": 4,
+    "on_sale": 3,
+    "failed": 1
+  },
+  "on_sale_products": [
+    {
+      "source": "trendyol",
+      "page": 1,
+      "url": "https://www.trendyol.com/sample-brand/sample-product-a-p-111111",
+      "title_hint": "sample product a",
+      "status": 200,
+      "title": "Sample Product A",
+      "price": 399.9,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "is_on_sale": true,
+      "error": null
+    },
+    {
+      "source": "hepsiburada",
+      "page": 1,
+      "url": "https://www.hepsiburada.com/sample-product-c-p-HBCV0000000001",
+      "title_hint": "sample product c",
+      "status": 200,
+      "title": "Sample Product C",
+      "price": 429.5,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "is_on_sale": true,
+      "error": null
+    },
+    {
+      "source": "trendyol",
+      "page": 1,
+      "url": "https://www.trendyol.com/sample-brand/sample-product-b-p-222222",
+      "title_hint": "sample product b",
+      "status": 200,
+      "title": "Sample Product B",
+      "price": 289.0,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "is_on_sale": true,
+      "error": null
+    }
+  ]
+}

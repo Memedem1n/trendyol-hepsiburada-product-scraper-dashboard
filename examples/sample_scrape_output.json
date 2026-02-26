@@ -1,0 +1,43 @@
+{
+  "query": "sample keyword",
+  "sites": [
+    {
+      "source": "trendyol",
+      "url": "https://www.trendyol.com/sr?q=sample+keyword",
+      "status": 200,
+      "total_links": 2,
+      "returned": 2,
+      "products": [
+        {
+          "title": "Sample Product A 100 ml",
+          "url": "https://www.trendyol.com/sample-brand/sample-product-a-p-111111",
+          "source": "trendyol"
+        },
+        {
+          "title": "Sample Product B 250 ml",
+          "url": "https://www.trendyol.com/sample-brand/sample-product-b-p-222222",
+          "source": "trendyol"
+        }
+      ]
+    },
+    {
+      "source": "hepsiburada",
+      "url": "https://www.hepsiburada.com/ara?q=sample+keyword",
+      "status": 200,
+      "total_links": 2,
+      "returned": 2,
+      "products": [
+        {
+          "title": "Sample Product C 50 ml",
+          "url": "https://www.hepsiburada.com/sample-product-c-p-HBCV0000000001",
+          "source": "hepsiburada"
+        },
+        {
+          "title": "Sample Product D 150 ml",
+          "url": "https://www.hepsiburada.com/sample-product-d-p-HBCV0000000002",
+          "source": "hepsiburada"
+        }
+      ]
+    }
+  ]
+}

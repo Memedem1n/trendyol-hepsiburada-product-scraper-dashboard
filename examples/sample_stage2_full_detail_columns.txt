@@ -1,0 +1,13 @@
+product.brand.name
+product.category.name
+product.images
+product.badges[].name
+product.expends[].properties[].name
+product.expends[].properties[].property
+product.merchant.name
+product.merchant.rating
+product.merchant.city
+product.reviews.customerReviewScore
+product.reviews.customerReviewCount
+campaignDetail.winnerCampaignName
+product.stock.text

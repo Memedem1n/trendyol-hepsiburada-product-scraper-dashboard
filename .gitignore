@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.DS_Store
+Thumbs.db
+
+dashboard/server_stdout.log
+dashboard/server_stderr.log
+
+# Generated scrape artifacts (private/local)
+scrape_output.json
+stage2_vichy_output.json
+stage2_vichy_full_detail_output.json
+stage2_vichy_full_detail_columns.txt
+rapor_ozet.txt
+tmp_hb_*.html
+tmp_hb_*.js

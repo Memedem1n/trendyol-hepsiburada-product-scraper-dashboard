@@ -1,0 +1,10 @@
+Sample Full Detail Report
+Generated At (UTC): 2026-02-26T00:00:00+00:00
+Query: sample brand
+Listing Total: 4
+Details Fetched: 4
+On Sale: 3
+Failed: 1
+Column Count: 13
+Products with other sellers: 1
+Total other seller rows: 2

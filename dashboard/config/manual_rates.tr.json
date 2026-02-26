@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "effective_date": "2026-02-25",
+  "sources": [
+    "trendyol",
+    "hepsiburada"
+  ],
+  "references": [
+    {
+      "title": "Hepsiburada - Komisyon Bilgisi Sorgulama",
+      "url": "https://developers.hepsiburada.com/hepsiburada/reference/komisyon-bilgisi-sorgulama"
+    },
+    {
+      "title": "Trendyol - Current Account Statement Integration",
+      "url": "https://developers.trendyol.com/v2.0/docs/current-account-statement-integration"
+    },
+    {
+      "title": "Trendyol - Cargo Invoice Details",
+      "url": "https://developers.trendyol.com/v2.0/docs/cargo-invoice-details"
+    },
+    {
+      "title": "Hepsiburada - Order Integration",
+      "url": "https://developers.hepsiburada.com/hepsiburada/reference/order-list"
+    }
+  ],
+  "defaults": {
+    "target_profit_pct": 50,
+    "commission_rate_pct": 18,
+    "shipping_tl": 39,
+    "other_fee_tl": 0
+  },
+  "commission_rates": [
+    {
+      "source": "trendyol",
+      "category_key": "kozmetik",
+      "rate_pct": 18
+    },
+    {
+      "source": "trendyol",
+      "category_key": "sac-bakim",
+      "rate_pct": 17
+    },
+    {
+      "source": "trendyol",
+      "category_key": "dermokozmetik",
+      "rate_pct": 18
+    },
+    {
+      "source": "hepsiburada",
+      "category_key": "kozmetik",
+      "rate_pct": 20
+    },
+    {
+      "source": "hepsiburada",
+      "category_key": "sac-bakim",
+      "rate_pct": 19
+    },
+    {
+      "source": "hepsiburada",
+      "category_key": "dermokozmetik",
+      "rate_pct": 20
+    }
+  ],
+  "shipping_rates": [
+    {
+      "source": "trendyol",
+      "desi_min": 0,
+      "desi_max": 1,
+      "price_tl": 39
+    },
+    {
+      "source": "trendyol",
+      "desi_min": 1.01,
+      "desi_max": 2,
+      "price_tl": 49
+    },
+    {
+      "source": "trendyol",
+      "desi_min": 2.01,
+      "desi_max": 3,
+      "price_tl": 59
+    },
+    {
+      "source": "trendyol",
+      "desi_min": 3.01,
+      "desi_max": 5,
+      "price_tl": 69
+    },
+    {
+      "source": "hepsiburada",
+      "desi_min": 0,
+      "desi_max": 1,
+      "price_tl": 42
+    },
+    {
+      "source": "hepsiburada",
+      "desi_min": 1.01,
+      "desi_max": 2,
+      "price_tl": 52
+    },
+    {
+      "source": "hepsiburada",
+      "desi_min": 2.01,
+      "desi_max": 3,
+      "price_tl": 62
+    },
+    {
+      "source": "hepsiburada",
+      "desi_min": 3.01,
+      "desi_max": 5,
+      "price_tl": 74
+    }
+  ]
+}

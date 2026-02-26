@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scraper Lens Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Trendyol + Hepsiburada</p>
+      <h1>Scraper Lens</h1>
+      <p class="hero-sub">Kolon bazli sayisal ve secimsel filtreleme paneli</p>
+    </div>
+    <div class="hero-actions">
+      <button id="reloadDefaultBtn" class="btn btn-secondary">Varsayilan JSON Yukle</button>
+      <label class="btn btn-primary" for="fileInput">JSON Dosyasi Sec</label>
+      <input id="fileInput" type="file" accept="application/json,.json" hidden />
+    </div>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <main class="layout">
+    <aside class="panel sidebar">
+      <section class="block">
+        <h2>Veri</h2>
+        <p id="datasetInfo" class="muted">Yukleniyor...</p>
+      </section>
+
+      <section class="block">
+        <h2>Genel Arama</h2>
+        <input id="searchInput" type="search" placeholder="Baslik, URL, satici ara..." />
+      </section>
+
+      <section class="block">
+        <h2>Kaynak</h2>
+        <div id="sourceFilters" class="source-list"></div>
+      </section>
+
+      <section class="block">
+        <div class="block-head">
+          <h2>Badge Filtre</h2>
+          <button id="clearBadgeFilterBtn" class="btn btn-mini">Temizle</button>
+        </div>
+        <div class="badge-legend" aria-label="Badge renk aciklamasi">
+          <span class="badge-legend-item badge-tone-trust">Yesil: oncelikli / guven</span>
+          <span class="badge-legend-item badge-tone-deal">Turuncu: firsat (olsa da olur)</span>
+          <span class="badge-legend-item badge-tone-official">Kirmizi: resmi satici uyarisi</span>
+        </div>
+        <div id="badgeFilters" class="badge-filter-wrap"></div>
+      </section>
+
+      <section class="block">
+        <h2>Hizli Sayisal Filtre</h2>
+        <div id="quickNumericFilters" class="quick-grid"></div>
+      </section>
+
+      <section class="block">
+        <h2>Kar Motoru</h2>
+        <div class="profit-grid">
+          <label class="field-stack">
+            <span>Hedef Kar %</span>
+            <input id="targetProfitInput" type="number" min="1" step="0.1" />
+          </label>
+          <label class="field-stack">
+            <span>Ek Kesinti (TL)</span>
+            <input id="extraFeeInput" type="number" min="0" step="0.01" />
+          </label>
+          <label class="field-stack">
+            <span>Fallback Komisyon %</span>
+            <input id="fallbackCommissionInput" type="number" min="0" step="0.1" />
+          </label>
+          <label class="field-stack">
+            <span>Fallback Kargo (TL)</span>
+            <input id="fallbackShippingInput" type="number" min="0" step="0.01" />
+          </label>
+        </div>
+        <label class="source-option inline-check">
+          <input id="profitOnlyToggle" type="checkbox" />
+          <span>Sadece pozitif netli urunleri goster</span>
+        </label>
+        <p id="ratesInfo" class="muted"></p>
+      </section>
+
+      <section class="block">
+        <div class="block-head">
+          <h2>Gelismis Filtre</h2>
+          <button id="addFilterBtn" class="btn btn-mini">+ Filtre</button>
+        </div>
+        <div id="advancedFilters" class="advanced-stack"></div>
+      </section>
+
+      <section class="block">
+        <h2>Gorunur Kolonlar</h2>
+        <div class="inline-controls">
+          <select id="columnPicker"></select>
+          <button id="addVisibleColumnBtn" class="btn btn-mini">Ekle</button>
+        </div>
+        <div id="visibleColumns" class="chip-wrap"></div>
+      </section>
+
+      <section class="block block-actions">
+        <button id="resetFiltersBtn" class="btn btn-danger">Filtreleri Sifirla</button>
+        <button id="exportCsvBtn" class="btn btn-secondary">Filtreli CSV Indir</button>
+      </section>
+    </aside>
+
+    <section class="panel content">
+      <div id="comparePanel" class="compare-panel hidden"></div>
+      <div class="table-toolbar">
+        <div id="resultSummary" class="muted">Sonuclar hazirlaniyor...</div>
+        <div class="pager" id="pager"></div>
+      </div>
+      <div id="tableWrap" class="table-wrap"></div>
+    </section>
+  </main>
+
+  <div id="detailModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="detailTitle">Urun Detayi</h3>
+        <button id="closeModalBtn" class="btn btn-mini">Kapat</button>
+      </div>
+      <div class="modal-body">
+        <div id="detailSummary" class="detail-summary"></div>
+        <h4>Diger Saticilar</h4>
+        <div id="otherSellersWrap" class="modal-table-wrap"></div>
+        <details>
+          <summary>Ham Detail Columns JSON</summary>
+          <pre id="detailJson"></pre>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

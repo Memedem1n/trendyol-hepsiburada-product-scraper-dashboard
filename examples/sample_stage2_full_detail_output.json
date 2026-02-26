@@ -1,0 +1,223 @@
+{
+  "query": "sample brand",
+  "generated_at_utc": "2026-02-26T00:00:00+00:00",
+  "settings": {
+    "verify_ssl": false,
+    "workers": 4,
+    "max_pages_trendyol": 2,
+    "max_pages_hepsiburada": 2,
+    "trendyol_brand_url": "https://www.trendyol.com/sample-brand-x-b000",
+    "hepsiburada_brand_url": "https://www.hepsiburada.com/magaza/sample-brand",
+    "full_detail": true
+  },
+  "listing_totals": {
+    "trendyol": 2,
+    "hepsiburada": 2,
+    "all": 4
+  },
+  "detail_totals": {
+    "fetched": 4,
+    "on_sale": 3,
+    "failed": 1
+  },
+  "detail_schema": {
+    "column_count": 13,
+    "columns": [
+      "product.brand.name",
+      "product.category.name",
+      "product.images",
+      "product.badges[].name",
+      "product.expends[].properties[].name",
+      "product.expends[].properties[].property",
+      "product.merchant.name",
+      "product.merchant.rating",
+      "product.merchant.city",
+      "product.reviews.customerReviewScore",
+      "product.reviews.customerReviewCount",
+      "campaignDetail.winnerCampaignName",
+      "product.stock.text"
+    ]
+  },
+  "other_seller_totals": {
+    "products_with_other_sellers": 1,
+    "other_seller_rows": 2
+  },
+  "on_sale_products": [
+    {
+      "source": "trendyol",
+      "page": 1,
+      "url": "https://www.trendyol.com/sample-brand/sample-product-a-p-111111",
+      "title_hint": "sample product a",
+      "status": 200,
+      "title": "Sample Product A 100 ml",
+      "price": 399.9,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "in_stock": true,
+      "is_on_sale": true,
+      "rating_score": 4.6,
+      "rating_count": 210,
+      "review_count": 210,
+      "favorite_count": 185,
+      "seller_name": "Sample Seller A",
+      "seller_id": "SAMPLE_SELLER_A",
+      "seller_score": 9.4,
+      "other_seller_count": 2,
+      "other_sellers": [
+        {
+          "seller_id": "SAMPLE_SELLER_A2",
+          "seller_name": "Sample Seller A2",
+          "seller_score": 9.1,
+          "free_cargo": true,
+          "rush_delivery": false,
+          "corporate_invoice_applicable": true,
+          "url": "https://www.trendyol.com/sample-brand/sample-product-a-p-111111",
+          "price": 409.9,
+          "currency": "TRY",
+          "discount_percentage": 0
+        },
+        {
+          "seller_id": "SAMPLE_SELLER_A3",
+          "seller_name": "Sample Seller A3",
+          "seller_score": 8.9,
+          "free_cargo": false,
+          "rush_delivery": false,
+          "corporate_invoice_applicable": true,
+          "url": "https://www.trendyol.com/sample-brand/sample-product-a-p-111111",
+          "price": 419.9,
+          "currency": "TRY",
+          "discount_percentage": 0
+        }
+      ],
+      "detail_columns": {
+        "product.brand.name": "Sample Brand",
+        "product.category.name": "Sample Category",
+        "product.images": [
+          "https://example.com/sample-a.jpg"
+        ],
+        "product.badges[].name": [
+          "Sample Badge",
+          "Kargo Bedava"
+        ],
+        "product.expends[].properties[].name": [
+          [
+            "Hacim"
+          ]
+        ],
+        "product.expends[].properties[].property": [
+          [
+            "100 ml"
+          ]
+        ],
+        "product.merchant.name": "Sample Seller A",
+        "product.merchant.rating": 9.4,
+        "product.merchant.city": "Istanbul",
+        "product.reviews.customerReviewScore": 4.6,
+        "product.reviews.customerReviewCount": 210,
+        "campaignDetail.winnerCampaignName": "Sample Campaign",
+        "product.stock.text": "50 adetten az"
+      },
+      "error": null
+    },
+    {
+      "source": "hepsiburada",
+      "page": 1,
+      "url": "https://www.hepsiburada.com/sample-product-c-p-HBCV0000000001",
+      "title_hint": "sample product c",
+      "status": 200,
+      "title": "Sample Product C 50 ml",
+      "price": 429.5,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "in_stock": true,
+      "is_on_sale": true,
+      "rating_score": 4.4,
+      "rating_count": 88,
+      "review_count": 88,
+      "favorite_count": null,
+      "seller_name": "Sample Merchant C",
+      "seller_id": "SAMPLE_MERCHANT_C",
+      "seller_score": 8.7,
+      "other_seller_count": 0,
+      "other_sellers": [],
+      "detail_columns": {
+        "product.brand.name": "Sample Brand",
+        "product.category.name": "Sample Category",
+        "product.images": [
+          "https://example.com/sample-c.jpg"
+        ],
+        "product.badges[].name": [
+          "Fast Shipping"
+        ],
+        "product.expends[].properties[].name": [
+          [
+            "Miktar"
+          ]
+        ],
+        "product.expends[].properties[].property": [
+          [
+            "50 ml"
+          ]
+        ],
+        "product.merchant.name": "Sample Merchant C",
+        "product.merchant.rating": 8.7,
+        "product.merchant.city": "Ankara",
+        "product.reviews.customerReviewScore": 4.4,
+        "product.reviews.customerReviewCount": 88,
+        "campaignDetail.winnerCampaignName": "Sample Promo",
+        "product.stock.text": "In stock"
+      },
+      "error": null
+    },
+    {
+      "source": "trendyol",
+      "page": 1,
+      "url": "https://www.trendyol.com/sample-brand/sample-product-b-p-222222",
+      "title_hint": "sample product b",
+      "status": 200,
+      "title": "Sample Product B 250 ml",
+      "price": 289.0,
+      "currency": "TRY",
+      "availability": "https://schema.org/InStock",
+      "in_stock": true,
+      "is_on_sale": true,
+      "rating_score": 4.2,
+      "rating_count": 45,
+      "review_count": 45,
+      "favorite_count": 50,
+      "seller_name": "Sample Seller B",
+      "seller_id": "SAMPLE_SELLER_B",
+      "seller_score": 8.8,
+      "other_seller_count": 0,
+      "other_sellers": [],
+      "detail_columns": {
+        "product.brand.name": "Sample Brand",
+        "product.category.name": "Sample Category",
+        "product.images": [
+          "https://example.com/sample-b.jpg"
+        ],
+        "product.badges[].name": [
+          "Sample Badge"
+        ],
+        "product.expends[].properties[].name": [
+          [
+            "Hacim"
+          ]
+        ],
+        "product.expends[].properties[].property": [
+          [
+            "250 ml"
+          ]
+        ],
+        "product.merchant.name": "Sample Seller B",
+        "product.merchant.rating": 8.8,
+        "product.merchant.city": "Izmir",
+        "product.reviews.customerReviewScore": 4.2,
+        "product.reviews.customerReviewCount": 45,
+        "campaignDetail.winnerCampaignName": "Sample Deal",
+        "product.stock.text": "20 adetten az"
+      },
+      "error": null
+    }
+  ]
+}

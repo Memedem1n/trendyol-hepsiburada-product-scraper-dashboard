@@ -114,21 +114,21 @@ python poc_trendyol_hepsiburada.py --query iphone --limit 20 --output scrape_out
 Stage-2 basic:
 
 ```powershell
-python stage2_brand_scrape.py --query vichy --workers 8 --output stage2_vichy_output.json
+python stage2_brand_scrape.py --query sample-brand --workers 8 --output stage2_brand_output.json
 ```
 
 Stage-2 full detail (onerilen):
 
 ```powershell
 python stage2_brand_scrape.py `
-  --query vichy `
-  --trendyol-brand-url "https://www.trendyol.com/vichy-x-b602" `
-  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/vichy" `
+  --query sample-brand `
+  --trendyol-brand-url "https://www.trendyol.com/sample-brand-x-b000" `
+  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/sample-brand" `
   --max-pages-trendyol 45 `
   --max-pages-hepsiburada 5 `
   --workers 10 `
   --full-detail `
-  --output stage2_vichy_full_detail_output.json
+  --output stage2_brand_full_detail_output.json
 ```
 
 Not: Gercek scrape ciktilari varsayilan olarak repoya eklenmez; acik kaynak icin `examples/` altindaki sentetik dosyalar kullanilir.
@@ -319,21 +319,21 @@ python poc_trendyol_hepsiburada.py --query iphone --limit 20 --output scrape_out
 Stage-2 basic:
 
 ```powershell
-python stage2_brand_scrape.py --query vichy --workers 8 --output stage2_vichy_output.json
+python stage2_brand_scrape.py --query sample-brand --workers 8 --output stage2_brand_output.json
 ```
 
 Stage-2 full detail (recommended):
 
 ```powershell
 python stage2_brand_scrape.py `
-  --query vichy `
-  --trendyol-brand-url "https://www.trendyol.com/vichy-x-b602" `
-  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/vichy" `
+  --query sample-brand `
+  --trendyol-brand-url "https://www.trendyol.com/sample-brand-x-b000" `
+  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/sample-brand" `
   --max-pages-trendyol 45 `
   --max-pages-hepsiburada 5 `
   --workers 10 `
   --full-detail `
-  --output stage2_vichy_full_detail_output.json
+  --output stage2_brand_full_detail_output.json
 ```
 
 Note: Real scrape outputs are intentionally excluded from version control; use the synthetic public samples in `examples/`.
@@ -459,14 +459,14 @@ pip install scrapling
 
 ```powershell
 python stage2_brand_scrape.py `
-  --query vichy `
-  --trendyol-brand-url "https://www.trendyol.com/vichy-x-b602" `
-  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/vichy" `
+  --query sample-brand `
+  --trendyol-brand-url "https://www.trendyol.com/sample-brand-x-b000" `
+  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/sample-brand" `
   --max-pages-trendyol 45 `
   --max-pages-hepsiburada 5 `
   --workers 10 `
   --full-detail `
-  --output stage2_vichy_full_detail_output.json
+  --output stage2_brand_full_detail_output.json
 ```
 
 4. Dashboard ac:
@@ -501,14 +501,14 @@ pip install scrapling
 
 ```powershell
 python stage2_brand_scrape.py `
-  --query vichy `
-  --trendyol-brand-url "https://www.trendyol.com/vichy-x-b602" `
-  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/vichy" `
+  --query sample-brand `
+  --trendyol-brand-url "https://www.trendyol.com/sample-brand-x-b000" `
+  --hepsiburada-brand-url "https://www.hepsiburada.com/magaza/sample-brand" `
   --max-pages-trendyol 45 `
   --max-pages-hepsiburada 5 `
   --workers 10 `
   --full-detail `
-  --output stage2_vichy_full_detail_output.json
+  --output stage2_brand_full_detail_output.json
 ```
 
 4. Start dashboard:

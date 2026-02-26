@@ -959,18 +959,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Stage-2 scrape: list urunleri topla, urun sayfasindan fiyat/stok/detay cek, satista olanlari filtrele."
     )
-    parser.add_argument("--query", default="vichy", help="Marka veya arama kelimesi (varsayilan: vichy)")
+    parser.add_argument("--query", default="sample-brand", help="Marka veya arama kelimesi (varsayilan: sample-brand)")
     parser.add_argument("--max-pages-trendyol", type=int, default=40)
     parser.add_argument("--max-pages-hepsiburada", type=int, default=20)
     parser.add_argument(
         "--trendyol-brand-url",
         default="",
-        help="Trendyol marka URL'si (ornek: https://www.trendyol.com/vichy-x-b602)",
+        help="Trendyol marka URL'si (ornek: https://www.trendyol.com/sample-brand-x-b000)",
     )
     parser.add_argument(
         "--hepsiburada-brand-url",
         default="",
-        help="Hepsiburada magaza URL'si (ornek: https://www.hepsiburada.com/magaza/vichy)",
+        help="Hepsiburada magaza URL'si (ornek: https://www.hepsiburada.com/magaza/sample-brand)",
     )
     parser.add_argument("--workers", type=int, default=8, help="Ikinci asama urun fetch paralelligi")
     parser.add_argument(
@@ -985,7 +985,7 @@ def main() -> None:
         default=False,
         help="Detay kolonlari, diger saticilar ve yildiz/yorum verilerini cikar",
     )
-    parser.add_argument("--output", default="stage2_vichy_output.json", help="JSON cikti dosyasi")
+    parser.add_argument("--output", default="stage2_brand_output.json", help="JSON cikti dosyasi")
     args = parser.parse_args()
     logging.getLogger("scrapling").setLevel(logging.ERROR)
 
